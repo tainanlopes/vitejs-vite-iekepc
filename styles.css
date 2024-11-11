@@ -1,0 +1,214 @@
+.leve-side-label {
+  position: fixed;
+  right: 0;
+  top: 33vh;
+  background: linear-gradient(to bottom, #4B0082, #2D0050);
+  width: 64px;
+  height: 128px;
+  border-radius: 8px 0 0 8px;
+  cursor: pointer;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: opacity 0.3s ease;
+}
+
+.leve-side-label-ia {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.leve-side-label-text {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.leve-interface {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 400px;
+  background: white;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+  z-index: 10000;
+  display: none;
+  flex-direction: column;
+}
+
+.leve-interface.open {
+  display: flex;
+}
+
+.leve-header {
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.leve-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.leve-close {
+  color: #666;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.leve-close:hover {
+  color: #333;
+}
+
+.leve-nav {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+}
+
+.leve-nav-button {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.leve-nav-button.active {
+  color: #00A3C4;
+  border-bottom: 2px solid #00A3C4;
+}
+
+.leve-content {
+  padding: 16px;
+  flex: 1;
+  position: relative;
+}
+
+.leve-section {
+  margin-bottom: 24px;
+}
+
+.leve-section-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.leve-section-desc {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.leve-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.leve-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+.leve-button-primary {
+  color: #00A3C4;
+  border-color: #00A3C4;
+}
+
+.leve-button-primary:hover {
+  background: #00A3C4;
+  color: white;
+}
+
+.leve-button-primary.recording {
+  background: #DC2626;
+  color: white;
+  border-color: #DC2626;
+  animation: pulse 2s infinite;
+}
+
+.leve-generate-button {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: #F59E0B;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.leve-generate-button:hover {
+  background: #D97706;
+}
+
+.leve-transcription {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 16px;
+  height: 300px;
+  margin-bottom: 60px;
+}
+
+.leve-transcription-content {
+  height: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.leve-footer {
+  padding: 16px;
+  border-top: 1px solid #eee;
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+}
+
+.leve-footer a {
+  color: #666;
+  text-decoration: none;
+}
+
+.leve-footer a:hover {
+  color: #00A3C4;
+  text-decoration: underline;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

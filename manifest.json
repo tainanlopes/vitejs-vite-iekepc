@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Leve - Atendimento Clínico",
+  "version": "1.0",
+  "description": "Assistente de atendimento clínico com IA",
+  "permissions": ["activeTab", "audioCapture"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
